@@ -26,6 +26,31 @@
 
 
         //Funciones 
+
+        function MensajeError(){
+            if(this.value == ''){
+                let error = document.createElement('p'); //Creamos una etiqueta p
+                error.classList.add('mistakeError');
+                let mensaje = document.createTextNode('Este campo es obligatorio'); //Diseñemos el mensaje a mostrar
+                error.style.display = 'block'; //Ponemos Display: block al elemento para mostrarlo
+                error.appendChild(mensaje);
+                this.parentElement.appendChild(error);
+                this.style.border = '1px solid red';
+            } 
+        }
+        function CampoLleno(){
+            if(this.value != ''){
+                alert('hi');
+                document.querySelectorAll('mistakeError').style.display = 'none';
+            }
+        }
+        
+        nombre.addEventListener("blur", MensajeError);
+        apellido.addEventListener("blur", MensajeError);
+        email.addEventListener("blur", MensajeError);
+
+        apellido.addEventListener('blur', CampoLleno);
+
         pase_dia.addEventListener('blur', mostrarDias);
         pase_dosdias.addEventListener('blur', mostrarDias);
         pase_completo.addEventListener('blur', mostrarDias);
