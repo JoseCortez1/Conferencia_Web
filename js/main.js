@@ -29,27 +29,31 @@
 
         function MensajeError(){
             if(this.value == ''){
-                let error = document.createElement('p'); //Creamos una etiqueta p
+                /*let error = document.createElement('p'); //Creamos una etiqueta p
                 error.classList.add('mistakeError');
                 let mensaje = document.createTextNode('Este campo es obligatorio'); //Diseñemos el mensaje a mostrar
                 error.style.display = 'block'; //Ponemos Display: block al elemento para mostrarlo
                 error.appendChild(mensaje);
-                this.parentElement.appendChild(error);
+                this.parentElement.appendChild(error);*/
+                errorDiv.style.display = 'block';
+                errorDiv.innerHTML = 'Este campo es obligatorio'
                 this.style.border = '1px solid red';
-            } 
-        }
-        function CampoLleno(){
-            if(this.value != ''){
-                alert('hi');
-                document.querySelectorAll('mistakeError').style.display = 'none';
+            }else{
+               /* let notError = document.getElementsByClassName('mistakeError');
+                for(let i = 0;i<notError.length;i++){
+                    notError[i].style.display = 'none';
+                    
+                }*/
+                errorDiv.style.display = 'none';
+
+                this.style.border = '1px solid black';
             }
         }
-        
         nombre.addEventListener("blur", MensajeError);
         apellido.addEventListener("blur", MensajeError);
         email.addEventListener("blur", MensajeError);
 
-        apellido.addEventListener('blur', CampoLleno);
+        
 
         pase_dia.addEventListener('blur', mostrarDias);
         pase_dosdias.addEventListener('blur', mostrarDias);
