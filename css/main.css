@@ -622,7 +622,6 @@ ul li{
 }
 .mapa{
     height: 420px;
-    background-color: green;
 }
 
 /*          Testimoniales                   */
@@ -912,6 +911,11 @@ div > label> time{
 
 #error{
     clear: both;
+    display: 'none';
+    max-width: 100%;
+    background-color: #ff9924;
+    font-weight: 700;
+    
 }
 
 

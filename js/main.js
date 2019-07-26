@@ -3,6 +3,15 @@
 
     let regalo = document.getElementById('regalo');
     document.addEventListener('DOMContentLoaded', function(){
+        var map = L.map('mapa').setView([20.73396, -103.380522], 16);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([20.73396, -103.380522]).addTo(map)
+            .bindPopup('Auditorio Telmex.- KBA')
+            .openPopup();
 
         //Usuarios
         let nombre = document.getElementById('nombre');
@@ -38,6 +47,7 @@
                 errorDiv.style.display = 'block';
                 errorDiv.innerHTML = 'Este campo es obligatorio'
                 this.style.border = '1px solid red';
+                errorDiv.style.padding = '1rem 1rem 1rem 1rem '
             }else{
                /* let notError = document.getElementsByClassName('mistakeError');
                 for(let i = 0;i<notError.length;i++){
@@ -45,20 +55,32 @@
                     
                 }*/
                 errorDiv.style.display = 'none';
-
                 this.style.border = '1px solid black';
             }
         }
         nombre.addEventListener("blur", MensajeError);
         apellido.addEventListener("blur", MensajeError);
         email.addEventListener("blur", MensajeError);
-
+        email.addEventListener('blur', ValidarEmail);
         
 
         pase_dia.addEventListener('blur', mostrarDias);
         pase_dosdias.addEventListener('blur', mostrarDias);
         pase_completo.addEventListener('blur', mostrarDias);
 
+
+
+        function ValidarEmail(){
+            if(this.value.indexOf("@") > -1 ){
+                errorDiv.style.display = 'none';
+                this.style.border = '1px solid black';
+            }else{
+                errorDiv.style.display = 'block';
+                errorDiv.innerHTML = 'Debe contener al menos una @'
+                this.style.border = '1px solid red';
+                errorDiv.style.padding = '1rem 1rem 1rem 1rem '
+            }
+        }
 
         function mostrarDias(){
 
