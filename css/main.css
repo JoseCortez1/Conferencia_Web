@@ -423,6 +423,11 @@ section.programa{
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
 }
+
+/**Pendiente*/
+.menu-programa a.activo::after{
+
+}
 .menu-programa a i,.detalle-evento p i{
     margin-right: 5px;
     color: #fe4918;

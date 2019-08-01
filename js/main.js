@@ -162,3 +162,25 @@
 
     }); //Dom content loaded
 })();
+
+
+
+$(function(){
+
+    /**Programa del evento */
+    $('.ocultar').hide();
+    $('.programa-evento .info-cursos:first').show();
+    $('.menu-programa a:first').addClass('activo');
+
+
+    $('.menu-programa a').click(function(){
+
+        $('.menu-programa a').removeClass('activo');
+        $(this).addClass('activo');
+
+        let enlace = $(this).attr('href');
+        $('.ocultar').hide();
+        $(enlace).fadeIn(1000);
+        return false;
+    });
+});
