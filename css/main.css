@@ -748,7 +748,6 @@ cite span{
 .cuenta-regresiva .numero{
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 4.5em;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -756,6 +755,10 @@ cite span{
     display: block;
     font-size: 1.2rem;
     color: black;
+}
+.cuenta-regresiva .numero p{
+    color: #b43f1e;
+    font-size: 5rem;
 }
 
 @media (min-width: 768px){

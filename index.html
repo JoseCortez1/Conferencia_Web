@@ -181,22 +181,21 @@
     <div class="contenedor">
       <div class="resumen-evento">
         <div class="resumen-numero">
-          <p class="numero">6</p> <p>Invitados</p>
+          <p class="numero"></p> <p>Invitados</p>
 
         </div>
         <div class="resumen-numero">
-          <p class="numero">15</p> <p>Talleres</p>
+          <p class="numero"></p> <p>Talleres</p>
           
         </div>
         <div class="resumen-numero">
-          <p class="numero">3</p> <p>Días</p>
+          <p class="numero"></p> <p>Días</p>
           
         </div>
         <div class="resumen-numero">
-          <p class="numero">9</p> <p>Conferencias</p>
+          <p class="numero"></p> <p>Conferencias</p>
           
         </div>
-
       </div> <!--Resumen Evento-->
     </div> <!--Contenedor-->
   </div> <!--Contador and Parallax-->
@@ -301,10 +300,18 @@
     <h2>Faltan</h2>
     <div class="contenedor">
       <div class="cuenta-regresiva">
-        <p class="numero">80<span>días</span></p>
-        <p class="numero">15<span>horas</span></p>
-        <p class="numero">5<span>minutos</span></p>
-        <p class="numero">30<span>segundos</span></p>
+        <div class="numero">
+          <p id="dias"></p> <span>Días</span>
+        </div>
+        <div class="numero">
+          <p id="horas"></p> <span>Horas</span>
+        </div>
+        <div class="numero">
+          <p id="minutos"></p> <span>Minutos</span>
+        </div>
+        <div class="numero">
+          <p id="segundos"></p> <span>Segundos</span>
+        </div>
       </div>
 
     </div>
@@ -348,6 +355,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.animateNumber.js"></script>
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
   <script src="js/main.js"></script>
 
