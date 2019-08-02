@@ -577,9 +577,12 @@ p.numero{
 .precios{
     margin-bottom: 30px;
 }
+/*
+
 .lista-precios{
     padding:;
 }
+*/
 @media (min-width: 768px){
     .lista-precios{
         display: grid;
