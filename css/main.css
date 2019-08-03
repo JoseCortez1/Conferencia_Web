@@ -338,6 +338,14 @@ div.barra{
     background-color: #353535;
     padding: 20px 0 20px 0;
 }
+.fixed{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index:  2;
+
+}
 .logo{
     width: 79%; 
     float:left;
@@ -357,6 +365,7 @@ div.barra{
 /*Navegacion principal*/
 .navegacion-principal{
     display:none;
+    width: 100%;
 }
 
 nav.navegacion-principal a{
@@ -988,6 +997,13 @@ div > label> time{
     background-color: #ff9924;
     font-weight: 700;
     
+}
+
+
+
+/*Galeria */
+.galeria{
+    display: inline-block;
 }
 
 
