@@ -1,8 +1,8 @@
 $(function(){
     
-
-    let regalo = document.getElementById('regalo');
     
+    let regalo = document.getElementById('regalo');
+
 
         //Usuarios
         let nombre = document.getElementById('nombre');
@@ -170,34 +170,12 @@ $(function(){
     /** */
     
 
-    /**Lettering */
-    $('.nombre-sitio').lettering();
-
     
-
     /**Programa del evento */
     $('.ocultar').hide();
     $('.programa-evento .info-cursos:first').show();
     $('.menu-programa a:first').addClass('activo');
 
-    /**Menu movil  Resonsive */
-    $('.menu-mobil').click(function(){
-        $('.navegacion-principal').slideToggle(100);
-    });
-    /**Menu Fijo */
-    let windowHight = $(window).height();
-    let barraHeight = $('.barra').innerHeight();
-
-    $(window).scroll(function(){
-        let scroll =$(window).scrollTop();
-        if(scroll > windowHight){
-            $('.barra').addClass('fixed');
-            $('body').css({marginTop: barraHeight+'px'});
-        }else{
-            $('.barra').removeClass('fixed');
-            $('body').css({marginTop: '0px'});
-        }
-    });
 
 
 
