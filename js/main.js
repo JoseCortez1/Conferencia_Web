@@ -1,17 +1,8 @@
-(function(){
-    "use strict"
+$(function(){
+    
 
     let regalo = document.getElementById('regalo');
-    document.addEventListener('DOMContentLoaded', function(){
-        var map = L.map('mapa').setView([20.73396, -103.380522], 16);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([20.73396, -103.380522]).addTo(map)
-            .bindPopup('Auditorio Telmex.- KBA')
-            .openPopup();
+    
 
         //Usuarios
         let nombre = document.getElementById('nombre');
@@ -159,10 +150,19 @@
 
             
         });
+});
+$(function(){
+    /**Mapa */
+    var map = L.map('mapa').setView([20.73396, -103.380522], 16);
 
-    }); //Dom content loaded
-})();
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
 
+        L.marker([20.73396, -103.380522]).addTo(map)
+            .bindPopup('Auditorio Telmex.- KBA')
+            .openPopup();
+})
 
 
 $(function(){
@@ -179,6 +179,26 @@ $(function(){
     $('.ocultar').hide();
     $('.programa-evento .info-cursos:first').show();
     $('.menu-programa a:first').addClass('activo');
+
+    /**Menu movil  Resonsive */
+    $('.menu-mobil').click(function(){
+        $('.navegacion-principal').slideToggle(100);
+    });
+    /**Menu Fijo */
+    let windowHight = $(window).height();
+    let barraHeight = $('.barra').innerHeight();
+
+    $(window).scroll(function(){
+        let scroll =$(window).scrollTop();
+        if(scroll > windowHight){
+            $('.barra').addClass('fixed');
+            $('body').css({marginTop: barraHeight+'px'});
+        }else{
+            $('.barra').removeClass('fixed');
+            $('body').css({marginTop: '0px'});
+        }
+    });
+
 
 
     $('.menu-programa a').click(function(){
