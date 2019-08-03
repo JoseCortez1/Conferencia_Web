@@ -167,6 +167,14 @@
 
 $(function(){
 
+    /** */
+    
+
+    /**Lettering */
+    $('.nombre-sitio').lettering();
+
+    
+
     /**Programa del evento */
     $('.ocultar').hide();
     $('.programa-evento .info-cursos:first').show();
