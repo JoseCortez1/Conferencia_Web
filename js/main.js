@@ -1,6 +1,6 @@
 $(function(){
-    
-    
+
+
     let regalo = document.getElementById('regalo');
 
 
@@ -25,7 +25,7 @@ $(function(){
         let resultado = document.getElementById('lista-productos');
 
 
-        //Funciones 
+        //Funciones
 
         function MensajeError(){
             if(this.value == ''){
@@ -43,7 +43,7 @@ $(function(){
                /* let notError = document.getElementsByClassName('mistakeError');
                 for(let i = 0;i<notError.length;i++){
                     notError[i].style.display = 'none';
-                    
+
                 }*/
                 errorDiv.style.display = 'none';
                 this.style.border = '1px solid black';
@@ -53,7 +53,7 @@ $(function(){
         apellido.addEventListener("blur", MensajeError);
         email.addEventListener("blur", MensajeError);
         email.addEventListener('blur', ValidarEmail);
-        
+
 
         pase_dia.addEventListener('blur', mostrarDias);
         pase_dosdias.addEventListener('blur', mostrarDias);
@@ -78,7 +78,7 @@ $(function(){
             let boletosDia = parseInt(pase_dia.value, 10)|| 0;
             let boletos2Dias = parseInt(pase_dosdias.value, 10)|| 0;
             let boletoCompleto = parseInt(pase_completo.value, 10)|| 0;
-            
+
             let diasElegidos = [];
             if(boletosDia > 0){
                 diasElegidos.push('viernes');
@@ -101,7 +101,7 @@ $(function(){
                 alert("Debes elegir un regalo");
                 regalo.focus();
             }else{
-                
+
 
                 let boletosDia = parseInt(pase_dia.value, 10)|| 0;
                 let boletos2Dias = parseInt(pase_dosdias.value, 10)|| 0;
@@ -110,7 +110,7 @@ $(function(){
 
                 let totalPagar = ((boletosDia * 30) + (boletos2Dias * 40) + (boletoCompleto * 50));
                 totalPagar += (parseInt((camisaEvento.value, 10)|| 0) * 10) + (parseInt((etiquetas.value, 10)|| 0) * 2 );
-                
+
                 let sumaTotal = document.querySelector('#suma-total');
                 sumaTotal.innerHTML = '';   //Modifica el contenedor para vaciarlo y hacer la cuenta de nuevo
                 let nuevoP = document.createElement("p");
@@ -120,35 +120,35 @@ $(function(){
 
 
 
-                //Resumen de la compra 
+                //Resumen de la compra
 
-                let listaProductos = document.getElementById('lista-productos');  //Se obtiene el contenedor donde pondremos el resumen de la compra 
-                let lista = [];  //Se añade como lista para empezar a agregar a todos los elementos que añadiremos al resumen 
+                let listaProductos = document.getElementById('lista-productos');  //Se obtiene el contenedor donde pondremos el resumen de la compra
+                let lista = [];  //Se añade como lista para empezar a agregar a todos los elementos que añadiremos al resumen
                 if(boletosDia > 0){
-                    lista.push(`${boletosDia} Pase por un día`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen 
+                    lista.push(`${boletosDia} Pase por un día`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen
                 }
                 if(boletos2Dias > 0){
-                    lista.push(`${boletos2Dias} Pase por dos dias`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen 
+                    lista.push(`${boletos2Dias} Pase por dos dias`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen
                 }
                 if(boletoCompleto > 0){
-                    lista.push(`${boletoCompleto} Pase completo`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen 
+                    lista.push(`${boletoCompleto} Pase completo`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen
                 }
                 if(camisaEvento.value > 0){
-                    lista.push(`${camisaEvento.value} Camisa evento`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen 
+                    lista.push(`${camisaEvento.value} Camisa evento`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen
                 }
                 if(etiquetas.value > 0){
-                    lista.push(`${etiquetas.value} Etiqueta`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen 
+                    lista.push(`${etiquetas.value} Etiqueta`);  //Utilizamos el metodo push para agregar el string donde contenemos la informacion de cada parte del resumen
                 }
                 listaProductos.innerHTML = '';
                 listaProductos.style.display = "block";
                 for(let iterador = 0; iterador < lista.length ; iterador++){
-                    listaProductos.innerHTML += lista[iterador] + '<br/>'; //Añadimos cada elemento que previamente agregamos en la lista 
-                    
+                    listaProductos.innerHTML += lista[iterador] + '<br/>'; //Añadimos cada elemento que previamente agregamos en la lista
+
                 }
-                
+
             }
 
-            
+
         });
 });
 $(function(){
@@ -168,9 +168,9 @@ $(function(){
 $(function(){
 
     /** */
-    
 
-    
+
+
     /**Programa del evento */
     $('.ocultar').hide();
     $('.programa-evento .info-cursos:first').show();
@@ -194,9 +194,9 @@ $(function(){
     /**Animaciones para los numeros */
 
     $('.resumen-evento div:nth-child(1) p.numero').animateNumber({number: 6},3000);
-    $('.resumen-evento div:nth-child(2) p.numero').animateNumber({number: 15},1200);
-    $('.resumen-evento div:nth-child(3) p.numero').animateNumber({number: 3}, 6000);
-    $('.resumen-evento div:nth-child(4) p.numero').animateNumber({number: 9}, 2000);
+    $('.resumen-evento div:nth-child(2) p.numero').animateNumber({number: 15},3000);
+    $('.resumen-evento div:nth-child(3) p.numero').animateNumber({number: 3}, 3000);
+    $('.resumen-evento div:nth-child(4) p.numero').animateNumber({number: 9}, 3000);
 
 
     /**Contador de tiempo */

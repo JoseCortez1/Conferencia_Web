@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
   <link rel="stylesheet" href="css/main.css">
@@ -30,11 +30,11 @@
     <div class="hero">
       <div class="contenido-header">
         <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>  
-          <a href="#"><i class="fab fa-twitter"></i></a>  
-          <a href="#"><i class="fab fa-instagram"></i></a>  
-          <a href="#"><i class="fab fa-youtube"></i></a>  
-          <a href="#"><i class="fab fa-pinterest"></i></a>  
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
         </nav>
 
         <div class="informacion-evento">
@@ -42,9 +42,7 @@
             <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12 DIC</p>
             <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Guadalajara, Jal</p>
           </div>
-          <h1 class="nombre-sitio">
-            GDLWebCamp
-          </h1>
+          <h1 class="nombre-sitio">GDLWebCamp</h1>
           <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
         </div>
       </div>
@@ -139,14 +137,14 @@
               <p><i class="fas fa-user"></i>Helsinki D'Vorak</p>
             </div><!--Detalle Evento-->
             <a href="#" class="buttom float-right">Ver todos</a>
-          </div><!--Talleres-->        
-          
-          
+          </div><!--Talleres-->
+
+
         </div><!--Programa evento-->
       </div><!--Contenedor-->
     </div><!--Contenido Programa-->
   </section><!--Programa-->
-  
+
 
   <section class="contenedor seccion">
     <h2>Nuestros Invitados</h2>
@@ -186,20 +184,20 @@
         </div>
         <div class="resumen-numero">
           <p class="numero"></p> <p>Talleres</p>
-          
+
         </div>
         <div class="resumen-numero">
           <p class="numero"></p> <p>Días</p>
-          
+
         </div>
         <div class="resumen-numero">
           <p class="numero"></p> <p>Conferencias</p>
-          
+
         </div>
       </div> <!--Resumen Evento-->
     </div> <!--Contenedor-->
   </div> <!--Contador and Parallax-->
-  
+
   <section class="precios section">
     <h2>Precios</h2>
     <div class="contenedor">
@@ -231,7 +229,7 @@
           <h3>Pase por 2 días</h3>
           <p class="numero">$40</p>
           <ul>
-            <li>Bocadillos Gratis</li> 
+            <li>Bocadillos Gratis</li>
             <li>Todas las Conferencias</li>
             <li>Todos los Talleres</li>
           </ul>
@@ -251,8 +249,8 @@
     <div class="testimonial contenedor">
       <blockquote>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Optio magnam dicta sed incidunt, tempore ab, assumenda 
-             magni consequuntur dolorum, labore doloremque? Consequatur 
+             Optio magnam dicta sed incidunt, tempore ab, assumenda
+             magni consequuntur dolorum, labore doloremque? Consequatur
           </p>
           <footer>
             <img src="img/testimonial.jpg" alt="imagen testimonial">
@@ -263,8 +261,8 @@
 
       <blockquote>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Optio magnam dicta sed incidunt, tempore ab, assumenda 
-            magni consequuntur dolorum, labore doloremque? Consequatur 
+            Optio magnam dicta sed incidunt, tempore ab, assumenda
+            magni consequuntur dolorum, labore doloremque? Consequatur
         </p>
         <footer>
           <img src="img/testimonial.jpg" alt="imagen testimonial">
@@ -275,8 +273,8 @@
 
       <blockquote>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Optio magnam dicta sed incidunt, tempore ab, assumenda 
-            magni consequuntur dolorum, labore doloremque? Consequatur 
+            Optio magnam dicta sed incidunt, tempore ab, assumenda
+            magni consequuntur dolorum, labore doloremque? Consequatur
         </p>
         <footer>
           <img src="img/testimonial.jpg" alt="imagen testimonial">
@@ -316,7 +314,7 @@
 
     </div>
   </section>
-   
+
   <footer class="site-footer">
     <div class="contenedor contenido-footer">
       <div class="footer-informacion">
@@ -336,11 +334,11 @@
       <div class="menu">
           <h3>Redes <span>Sociales</span></h3>
           <nav class="redes-sociales">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>  
-              <a href="#"><i class="fab fa-twitter"></i></a>  
-              <a href="#"><i class="fab fa-instagram"></i></a>  
-              <a href="#"><i class="fab fa-youtube"></i></a>  
-              <a href="#"><i class="fab fa-pinterest"></i></a>  
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
             </nav>
       </div>
     </div>
