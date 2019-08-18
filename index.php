@@ -1,71 +1,8 @@
-<!doctype html>
-<html class="no-js" lang="">
+<?php
 
-<head>
-  <meta charset="utf-8">
-  <title>GDLWebCamp</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  include_once 'includes/templates/header.php';
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <header>
-    <div class="hero">
-      <div class="contenido-header">
-        <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
-        </nav>
-
-        <div class="informacion-evento">
-          <div class="clearfix iconos-informacion">
-            <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12 DIC</p>
-            <p class="ciudad"><i class="fas fa-map-marker-alt"></i>Guadalajara, Jal</p>
-          </div>
-          <h1 class="nombre-sitio">GDLWebCamp</h1>
-          <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="barra">
-    <div class="contenedor clearfix">
-      <div class="logo">
-        <img src="img/logo.svg" alt="logo gdlwebcam">
-      </div>
-
-      <div class="menu-mobil">
-          <i class="fas fa-bars"></i>
-      </div>
-
-      <nav class="navegacion-principal">
-        <a href="conferencia.html">Conferencia</a>
-        <a href="#">Calendarios</a>
-        <a href="#">Invitados</a>
-        <a href="registro.html">Reservaciones</a>
-      </nav>
-    </div> <!--Contenedor-->
-  </div> <!--Barra-->
+?>
 
   <section class="seccion contenedor">
     <h2>La mejor conderencia de diseño web en español </h2>
@@ -314,60 +251,8 @@
 
     </div>
   </section>
+<?php
 
-  <footer class="site-footer">
-    <div class="contenedor contenido-footer">
-      <div class="footer-informacion">
-        <h3>Sobre <span>Nosotros</span></h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, omnis officiis ipsum earum nisi, delectus deleniti aliquid nihil nostrum maiores consequatur libero totam veritatis voluptates magnam, amet architecto praesentium? Autem.
-        </p>
-      </div>
+  include_once 'includes/templates/footer.php';
 
-      <div class="ultimos-tweets">
-          <h3>Ultimos <span>Tweets</span></h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, omnis officiis</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, omnis officiis</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, omnis officiis</p>
-      </div>
-
-      <div class="menu">
-          <h3>Redes <span>Sociales</span></h3>
-          <nav class="redes-sociales">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-pinterest"></i></a>
-            </nav>
-      </div>
-    </div>
-    <p class="copyright">Todos los derechos reservados GDLCAMP</p>
-  </footer>
-
-
-
-
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-
-  <script src="js/plugins.js"></script>
-  <script src="js/jquery.lettering.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.animateNumber.js"></script>
-  <script src="js/waypoint.js"></script>
-  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
-
-</html>
+?>
