@@ -1006,6 +1006,67 @@ div > label> time{
     display: inline-block;
 }
 
+/*
+  Calendario
+*/
+.dia_eventos{
+  text-transform: uppercase;
+  padding: 10px 0px;
+  font-size: 1.3em;
+  background-color: #b43f1e;
+  color: #ffffff;
+  -webkit-transform: uppercase;
+  -moz-transform: uppercase;
+  -ms-transform: uppercase;
+  -o-transform: uppercase;
+}
+.contenido_dia{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+@media (min-width:768px){
+  .contenido_dia{
+    grid-template-columns: repeat(3 ,1fr);
+  }
+}
+@media (max-width:350px){
+  .contenido_dia{
+    grid-template-columns: repeat(1 ,1fr);
+  }
+}
+
+
+
+.dia{
+  border: 2px solid #e1e1e1;
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.dia:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.titulo{
+  color: #fe4918;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.dia p i{
+  color: #fe4918;
+  font-size: 1.3em;
+}
+
+
+
 
  /* ==========================================================================
    Helper classes

@@ -60,33 +60,37 @@
         //Recorriendo el arreglo
 
         foreach($calendario as $dia => $lista_eventos){?>
-          <h3>
+          <h3 class="dia_eventos">
+
             <i class="fa fa-calendar"></i>
             <?php
               setlocale( LC_TIME, 'es_ES.UTF-8');
 
               echo strftime("%A, %d de %B del %Y", strtotime($dia) );
+
             ?>
           </h3>
-          <?php foreach($lista_eventos as $evento){ ?>
-              <div class="dia">
-                <p class="titulo"> <?php echo $evento["titulo"]; ?> </p>
-                <p class="hora">
-                  <i class="fas fa-clock" aria-hidden="true"></i>
-                  <?php echo $evento["fecha"] . " " . $evento['hora']; ?>
-                </p>
-                <p>
-                <i class="<?php echo $evento['icono']; ?>" aria-hidden="true"></i>
-                  <?php echo $evento["categoria"]; ?>
-                </p>
-                <p>
-                  <i class="fas fa-user" aria-hidden="true"></i>
-                  <?php echo $evento['nombre'];?>
-                </p>
+          <div class="contenido_dia">
+            <?php foreach($lista_eventos as $evento){ ?>
+                <div class="dia">
+                  <p class="titulo"> <?php echo $evento["titulo"]; ?> </p>
+                  <p class="hora">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <?php echo $evento["fecha"] . " " . $evento['hora']; ?>
+                  </p>
+                  <p>
+                    <i class="<?php echo $evento['icono']; ?>" aria-hidden="true"></i>
+                    <?php echo $evento["categoria"]; ?>
+                  </p>
+                  <p>
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <?php echo $evento['nombre'];?>
+                  </p>
 
-              </div>
+                </div>
 
-          <?php } //Fin foreach eventos ?>
+            <?php } //Fin foreach eventos ?>
+          </div>
 
       <?php } //Fin foreach Dia?>
 
