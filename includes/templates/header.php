@@ -16,12 +16,23 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
-  <link rel="stylesheet" href="css/main.css">
 
+
+  <?php
+    $nombre = basename($_SERVER['PHP_SELF']);
+    $pagina = str_replace('.php', '', $nombre);
+    if($pagina == 'invitados' || $pagina == 'index'){
+      echo '<link rel="stylesheet" href="css/colorbox.css">';
+    }
+    elseif ($pagina == 'conferencia') {
+      echo '<link rel="stylesheet" href="css/lightbox.min.css">';
+    }
+  ?>
+  <link rel="stylesheet" href="css/main.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="<?php echo $pagina;?>">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -63,7 +74,7 @@
       <nav class="navegacion-principal">
         <a href="conferencia.php">Conferencia</a>
         <a href="calendario.php">Calendarios</a>
-        <a href="#">Invitados</a>
+        <a href="invitados.php">Invitados</a>
         <a href="registro.php">Reservaciones</a>
       </nav>
     </div> <!--Contenedor-->

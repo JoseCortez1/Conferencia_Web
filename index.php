@@ -83,52 +83,31 @@
   </section><!--Programa-->
 
 
-  <section class="contenedor seccion">
-    <h2>Nuestros Invitados</h2>
-    <div class="invitados">
-      <div class="invitado">
-        <img src="img/invitado1.jpg" alt="invitado">
-        <p><span>R</span>afael <span>B</span>autista</p>
-      </div>
-      <div class="invitado">
-        <img src="img/invitado2.jpg" alt="invitado">
-        <p><span>R</span>osa <span>J</span>imenez</p>
-      </div>
-      <div class="invitado">
-        <img src="img/invitado3.jpg" alt="invitado">
-        <p><span>J</span>ose <span>V</span>azquez</p>
-      </div>
-      <div class="invitado">
-        <img src="img/invitado4.jpg" alt="invitado">
-        <p><span>J</span>uana <span>M</span>endez</p>
-      </div>
-      <div class="invitado">
-        <img src="img/invitado5.jpg" alt="invitado">
-        <p><span>R</span>afael <span>B</span>autista</p>
-      </div>
-      <div class="invitado">
-        <img src="img/invitado6.jpg" alt="invitado">
-        <p><span>G</span>eorgina <span>N</span>ulpa</p>
-      </div>
-    </div><!--Invitados-->
+  <section class="seccion">
+    <?php
+
+      include_once 'includes/templates/invitados.php';
+
+    ?>
   </section>
+
   <div class="contador parallax">
     <div class="contenedor">
       <div class="resumen-evento">
         <div class="resumen-numero">
-          <p class="numero"></p> <p>Invitados</p>
+          <p class="numero">0</p> <p>Invitados</p>
 
         </div>
         <div class="resumen-numero">
-          <p class="numero"></p> <p>Talleres</p>
+          <p class="numero">0</p> <p>Talleres</p>
 
         </div>
         <div class="resumen-numero">
-          <p class="numero"></p> <p>Días</p>
+          <p class="numero">0</p> <p>Días</p>
 
         </div>
         <div class="resumen-numero">
-          <p class="numero"></p> <p>Conferencias</p>
+          <p class="numero">0</p> <p>Conferencias</p>
 
         </div>
       </div> <!--Resumen Evento-->

@@ -167,7 +167,12 @@ $(function(){
 
 $(function(){
 
-    /** */
+    /** Agregando clases al nav*/
+
+    $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass('activo');
+    $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
+    $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
+
 
 
 
@@ -192,11 +197,22 @@ $(function(){
 
 
     /**Animaciones para los numeros */
+    let resumenLista = $('.resumen-evento');
 
-    $('.resumen-evento div:nth-child(1) p.numero').animateNumber({number: 6},3000);
-    $('.resumen-evento div:nth-child(2) p.numero').animateNumber({number: 15},3000);
-    $('.resumen-evento div:nth-child(3) p.numero').animateNumber({number: 3}, 3000);
-    $('.resumen-evento div:nth-child(4) p.numero').animateNumber({number: 9}, 3000);
+    if(resumenLista.length > 0){
+      $('.resumen-evento').waypoint(function(){
+        $('.resumen-evento div:nth-child(1) p.numero').animateNumber({number: 6},3000);
+        $('.resumen-evento div:nth-child(2) p.numero').animateNumber({number: 15},3000);
+        $('.resumen-evento div:nth-child(3) p.numero').animateNumber({number: 3}, 3000);
+        $('.resumen-evento div:nth-child(4) p.numero').animateNumber({number: 9}, 3000);
+      },{
+        offset: '50%'
+      });
+    }
+
+    /**Color Box */
+    $(".inline").colorbox({inline:true, width:"50%"});
+
 
 
     /**Contador de tiempo */
@@ -207,6 +223,5 @@ $(function(){
         $('#minutos').html(event.strftime('%M'));
         $('#segundos').html(event.strftime('%S'));
     });
-
 
 });

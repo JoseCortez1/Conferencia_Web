@@ -39,12 +39,31 @@
 
   <script src="js/plugins.js"></script>
   <script src="js/jquery.lettering.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.animateNumber.js"></script>
+
+  <?php
+    $nombre = basename($_SERVER['PHP_SELF']);
+    $pagina = str_replace('.php', '', $nombre);
+    if($pagina == 'invitados'){
+      echo '<script src="js/jquery.colorbox.js"></script>';
+    }
+    elseif ($pagina == 'conferencia') {
+      echo '<script src="js/lightbox-plus-jquery.min.js"></script>';
+    }
+    elseif ($pagina == 'index'){
+      echo '<script src="js/jquery.waypoints.min.js"></script>';
+      echo '<script src="js/jquery.animateNumber.js"></script>';
+      echo '<script src="js/jquery.countdown.min.js"></script>';
+      echo '<script src="js/jquery.colorbox.js"></script>';
+    }
+  ?>
+
   <script src="js/waypoint.js"></script>
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
   <script src="js/header.js"></script>
+
   <script src="js/main.js"></script>
+
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

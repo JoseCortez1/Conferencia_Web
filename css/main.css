@@ -139,6 +139,9 @@ h3{
     font-family: 'PT Sans', sans-serif;
     margin: 0;
 }
+.activo{
+  border-bottom: 1px solid #fe4918;
+}
 .buttom{
     background-color: #fe4918;
     padding: 10px 40px;
@@ -522,6 +525,22 @@ section.programa{
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+.invitados-contenedor{
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 763px){
+  .invitados-contenedor{
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width: 991px){
+  .invitados-contenedor{
+      grid-template-columns: repeat(3,1fr);
+  }
+}
 .invitado img{
     max-width: 100%;
     filter: gray;
@@ -544,21 +563,6 @@ section.programa{
     -webkit-transform: scale(1.3);
 }
 
-.invitados{
-    display: grid;
-    grid-gap: 1rem;
-}
-@media (min-width: 763px){
-    .invitados{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media (min-width: 991px){
-    .invitados{
-        grid-template-columns: repeat(3,1fr);
-    }
-}
 .invitado{
     position: relative;
 }
@@ -1063,6 +1067,12 @@ div > label> time{
 .dia p i{
   color: #fe4918;
   font-size: 1.3em;
+}
+
+.cboxElement{
+  padding: 30px!important;
+  text-align: center;
+
 }
 
 
