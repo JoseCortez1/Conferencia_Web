@@ -166,6 +166,11 @@ h3{
     color:#fe4918;
 
 }
+.desactivado{
+  filter: brightness(0.6);
+
+  -webkit-filter: brightness(0.6);
+}
 .transparente{
     background-color: transparent;
     border-color: white;
@@ -591,11 +596,10 @@ section.programa{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-
-
-        /*Obscureceer las imagenes o el contenido*/
+    /*Obscureceer las imagenes o el contenido*/
     -webkit-filter: brightness(0.6);
     filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
 }
 
 .contador{
@@ -1073,6 +1077,15 @@ div > label> time{
   padding: 30px!important;
   text-align: center;
 
+}
+
+/*
+  Validar_registro:
+*/
+.exitoso{
+  color: #b43f1e;
+  font-weight: 700;
+  font-size: 3em;
 }
 
 

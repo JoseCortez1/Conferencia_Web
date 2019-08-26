@@ -61,6 +61,7 @@
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
   <script src="js/header.js"></script>
 
+
   <script src="js/main.js"></script>
 
 
@@ -71,6 +72,8 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"5e639bc9e133cf15e3a284539","lid":"e5a3e7144b","uniqueMethods":true}) })</script>
+
 </body>
 
 </html>

@@ -7,19 +7,19 @@
 
   <section class="seccion contenedor">
     <h2>Registro de Usuarios</h2>
-    <form action="index.html" id="registro" class="registro"thod="post">
+    <form action="validar_registro.php" id="registro" class="registro" method="post">
         <div id="dato_usuario" class="registro caja ordenFormulario">
             <div class="campo">
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Tu Nombre">
+                <input type="text" id="nombre" placeholder="Tu Nombre" name="nombre">
             </div>
             <div class="campo">
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" placeholder="Tu Apellido">
+                <input type="text" id="apellido" placeholder="Tu Apellido" name="apellido">
             </div>
             <div class="campo">
                 <label for="email">Correo</label>
-                <input type="email" id="email" placeholder="correo@ejemplo.com">
+                <input type="email" id="email" placeholder="correo@ejemplo.com" name="email">
             </div>
 
         </div><!--Fin de datos Usuarios-->
@@ -38,7 +38,7 @@
                       </ul>
 
                       <label for="pase_dia">Boletos deseados: </label>
-                      <input id="pase_dia" type="number" class="" min="0" max="15">
+                      <input id="pase_dia" type="number" class="" min="0" max="15" name="boletos[]">
 
                     </div><!--Tabla precio-->
 
@@ -51,7 +51,7 @@
                        <li>Todos los Talleres</li>
                      </ul>
                      <label for="pase_dia">Boletos deseados: </label>
-                      <input id="pase_completo" type="number" class="" min="0" max="15">
+                      <input id="pase_completo" type="number" class="" min="0" max="15" name="boletos[]">
                    </div><!--Tabla precio-->
 
                    <div class="tabla-precio">
@@ -63,7 +63,7 @@
                        <li>Todos los Talleres</li>
                      </ul>
                      <label for="pase_dia">Boletos deseados: </label>
-                     <input id="pase_dosdias" type="number" class="" min="0" max="15">
+                     <input id="pase_dosdias" type="number" class="" min="0" max="15" name="boletos[]">
 
                    </div><!--Tabla precio   <i class="fas fa-check"></i>  -->
 
@@ -148,20 +148,20 @@
                             <div class="extras">
                                 <div class="orden">
                                     <label for="camisa_evento"> Camisa del evento $10 <small>(Promocion 20% de descuento)</small></label>
-                                    <input type="number" min="0" id="camisa_evento" size="3" placeholder="0">
+                                    <input type="number" min="0" id="camisa_evento" size="3" placeholder="0" name="pedido_camisas">
                                 </div>
                                 <div class="orden">
                                     <label for="etiquetas">Paquete de 10 etiquetas $2 <small>(HTML, CSS, JavaScript, Google)</small></label>
-                                    <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
+                                    <input type="number" min="0" id="etiquetas" size="3" placeholder="0" name="pedido_etiquetas">
                                 </div>
                                 <div class="orden">
                                     <label for="regalo"> Seleccione regalo </label>
-                                    <select name="" id="regalo" required>
+                                    <select name="regalo" id="regalo" required>
                                         <option value="">--Seleccione un regalo--</option>
-                                        <option value="ETI">Etiquetas</option>
-                                        <option value="PUL">Pulceras</option>
-                                        <option value="PLUM">Plumas</option>
-                                        <option value="LLA">Llavero</option>
+                                        <option value="2">Etiquetas</option>
+                                        <option value="1">Pulceras</option>
+                                        <option value="3">Plumas</option>
+                                        <option value="4">Llavero</option>
                                     </select>
                                 </div><!--Orden-->
 
@@ -180,7 +180,9 @@
 
                                 </div>
 
-                                <input id="btnRegistro" type="submit" class="buttom" value="Pagar">
+
+                                <input type="hidden" name="total_pedido" id="total_pedido">
+                                <input id="btnRegistro" type="submit" class="buttom" name="submit" value="Pagar">
                             </div> <!--Total-->
 
                         </div>  <!--Caja-->

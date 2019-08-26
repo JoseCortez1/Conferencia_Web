@@ -245,7 +245,7 @@
     <div class="contenido contenedor">
       <p>Registrate al newsletter</p>
       <h3>GDLWebCamp</h3>
-      <a href="#" class="buttom transparente">Registro</a>
+      <a href="http://eepurl.com/gBvD1P" target="_blank" class="buttom transparente">Registro</a>
     </div>
   </div> <!--Newsletter and parallax-->
 
